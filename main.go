@@ -44,7 +44,7 @@ func main() {
 	}
 
 	if *downPtr != 0 && price < *downPtr {
-		msg = fmt.Sprintf("Price Up %.6f > %.6f", price, *downPtr)
+		msg = fmt.Sprintf("Price Down %.6f < %.6f", price, *downPtr)
 	}
 
 	if msg == "" {
